@@ -16,7 +16,7 @@ const FansOf: React.FC = () => {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
 
                         {/* Cradle Readers */}
-                        <div className="bg-brand-dark border border-white/10 p-6 md:p-8 hover:-translate-y-2 transition-transform duration-300 group opacity-0">
+                        <div className="bg-brand-dark border border-white/10 p-6 md:p-8 hover:-translate-y-2 transition-transform duration-300 group">
                             <h3 className="text-h2-mobile md:text-2xl font-header font-bold text-white uppercase mb-4 md:mb-6 text-center group-hover:text-brand-red transition-colors">Cradle Readers</h3>
 
                             <div className="mb-6">
@@ -41,7 +41,7 @@ const FansOf: React.FC = () => {
                         </div>
 
                         {/* The Wandering Inn Readers */}
-                        <div className="bg-brand-dark border border-white/10 p-6 md:p-8 hover:-translate-y-2 transition-transform duration-300 group opacity-0">
+                        <div className="bg-brand-dark border border-white/10 p-6 md:p-8 hover:-translate-y-2 transition-transform duration-300 group">
                             <h3 className="text-h2-mobile md:text-2xl font-header font-bold text-white uppercase mb-4 md:mb-6 text-center group-hover:text-brand-red transition-colors">The Wandering Inn</h3>
 
                             <div className="mb-6">
@@ -66,7 +66,7 @@ const FansOf: React.FC = () => {
                         </div>
 
                         {/* HWFWM Readers */}
-                        <div className="bg-brand-dark border border-white/10 p-6 md:p-8 hover:-translate-y-2 transition-transform duration-300 group opacity-0">
+                        <div className="bg-brand-dark border border-white/10 p-6 md:p-8 hover:-translate-y-2 transition-transform duration-300 group">
                             <h3 className="text-h2-mobile md:text-2xl font-header font-bold text-white uppercase mb-4 md:mb-6 text-center group-hover:text-brand-red transition-colors">He Who Fights Monsters</h3>
 
                             <div className="mb-6">
