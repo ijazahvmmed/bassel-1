@@ -1,6 +1,11 @@
 import React from 'react';
+import { AmazonPrice } from '../hooks/useAmazonPrice';
 
 const BookSection: React.FC = () => {
+  const BOOK1_URL = "https://www.amazon.in/dp/B0CWT3T1YG?tag=cuelinkss26622-21&geniuslink=true";
+  const BOOK2_URL = "https://www.amazon.in/Elder-Lands-II-Kingdom-Building-ebook/dp/B0FY3TWD3N?ref_=saga_dp_bnx_dsk_dp";
+  const BUNDLE_URL = "https://www.amazon.in/dp/B0CW19B8B4?binding=kindle_edition&ref_=saga_dp_bnx_dsk_sdp";
+
   return (
     <section id="books" className="py-12 md:py-20 lg:py-24 bg-black relative">
       <div className="container mx-auto px-6 md:px-12 md:pl-32">
@@ -8,7 +13,6 @@ const BookSection: React.FC = () => {
         <div className="mb-12 md:mb-20 text-center md:text-left">
           <h2 className="text-h1-mobile md:text-5xl lg:text-h1-desktop font-header font-bold text-white uppercase mb-4">The Elder Lands Series</h2>
           <div className="h-1 w-24 bg-brand-red mb-6 md:mx-0 mx-auto"></div>
-
         </div>
 
         <div className="flex flex-col gap-12 md:gap-24">
@@ -31,13 +35,15 @@ const BookSection: React.FC = () => {
               </div>
 
               <div className="flex items-center gap-4 mt-2">
-                <span className="text-gray-500 line-through text-base md:text-lg font-sans">$29.99</span>
-                <span className="text-brand-red text-xl md:text-2xl font-bold font-header tracking-widest">$14.99</span>
+                <span className="text-gray-500 line-through text-base md:text-lg font-sans">$9.99</span>
+                <span className="text-brand-red text-xl md:text-2xl font-bold font-header tracking-widest">
+                  <AmazonPrice asin="B0CWT3T1YG" />
+                </span>
               </div>
 
               <div className="mt-4 flex flex-col sm:flex-row gap-4">
-                <a href="https://www.amazon.in/dp/B0CWT3T1YG?tag=cuelinkss26622-21&geniuslink=true" target="_blank" rel="noopener noreferrer" className="bg-white text-black font-bold text-center uppercase tracking-widest px-8 py-3 hover:bg-brand-red hover:text-white transition-colors text-xs md:text-sm">Get on Amazon</a>
-                <a href="https://www.amazon.in/dp/B0CWT3T1YG?tag=cuelinkss26622-21&geniuslink=true" target="_blank" rel="noopener noreferrer" className="text-white text-center uppercase text-xs md:text-sm font-bold tracking-widest border-b border-white hover:text-brand-red hover:border-brand-red transition-colors pb-1 inline-block w-fit md:mx-0 mx-auto">View Details</a>
+                <a href={BOOK1_URL} target="_blank" rel="noopener noreferrer" className="bg-white text-black font-bold text-center uppercase tracking-widest px-8 py-3 hover:bg-brand-red hover:text-white transition-colors text-xs md:text-sm">Order on Amazon</a>
+                <a href={BOOK1_URL} target="_blank" rel="noopener noreferrer" className="text-white text-center uppercase text-xs md:text-sm font-bold tracking-widest border-b border-white hover:text-brand-red hover:border-brand-red transition-colors pb-1 inline-block w-fit md:mx-0 mx-auto">View Details</a>
               </div>
             </div>
           </div>
@@ -60,12 +66,14 @@ const BookSection: React.FC = () => {
               </div>
 
               <div className="flex items-center gap-4 mt-2">
-                <span className="text-brand-red text-xl md:text-2xl font-bold font-header tracking-widest">$15.99</span>
+                <span className="text-brand-red text-xl md:text-2xl font-bold font-header tracking-widest">
+                  <AmazonPrice asin="B0FY3TWD3N" />
+                </span>
               </div>
 
               <div className="mt-4 flex flex-col sm:flex-row gap-4">
-                <a href="https://www.amazon.in/Elder-Lands-II-Kingdom-Building-ebook/dp/B0FY3TWD3N?ref_=saga_dp_bnx_dsk_dp" target="_blank" rel="noopener noreferrer" className="bg-white text-black font-bold text-center uppercase tracking-widest px-8 py-3 hover:bg-brand-red hover:text-white transition-colors text-xs md:text-sm">Get on Amazon</a>
-                <a href="https://www.amazon.in/Elder-Lands-II-Kingdom-Building-ebook/dp/B0FY3TWD3N?ref_=saga_dp_bnx_dsk_dp" target="_blank" rel="noopener noreferrer" className="text-white text-center uppercase text-xs md:text-sm font-bold tracking-widest border-b border-white hover:text-brand-red hover:border-brand-red transition-colors pb-1 inline-block w-fit md:mx-0 mx-auto">View Details</a>
+                <a href={BOOK2_URL} target="_blank" rel="noopener noreferrer" className="bg-white text-black font-bold text-center uppercase tracking-widest px-8 py-3 hover:bg-brand-red hover:text-white transition-colors text-xs md:text-sm">Order on Amazon</a>
+                <a href={BOOK2_URL} target="_blank" rel="noopener noreferrer" className="text-white text-center uppercase text-xs md:text-sm font-bold tracking-widest border-b border-white hover:text-brand-red hover:border-brand-red transition-colors pb-1 inline-block w-fit md:mx-0 mx-auto">View Details</a>
               </div>
             </div>
           </div>
@@ -88,12 +96,14 @@ const BookSection: React.FC = () => {
               </ul>
 
               <div className="flex items-center gap-4 mt-2">
-                <span className="text-brand-red text-xl md:text-2xl font-bold font-header tracking-widest">$24.99</span>
+                <span className="text-brand-red text-xl md:text-2xl font-bold font-header tracking-widest">
+                  <AmazonPrice asin="B0CW19B8B4" />
+                </span>
                 <span className="text-green-500 text-[10px] md:text-sm font-bold uppercase tracking-widest bg-green-500/10 px-2 py-1 rounded">Best Value</span>
               </div>
 
               <div className="mt-4">
-                <a href="https://www.amazon.in/dp/B0CW19B8B4?binding=kindle_edition&ref_=saga_dp_bnx_dsk_sdp" target="_blank" rel="noopener noreferrer" className="bg-transparent border border-white text-white font-bold text-center uppercase tracking-widest px-8 py-3 hover:bg-brand-red hover:border-brand-red transition-colors text-xs md:text-sm inline-block w-full md:w-auto">Get Series Bundle</a>
+                <a href={BUNDLE_URL} target="_blank" rel="noopener noreferrer" className="bg-transparent border border-white text-white font-bold text-center uppercase tracking-widest px-8 py-3 hover:bg-brand-red hover:border-brand-red transition-colors text-xs md:text-sm inline-block w-full md:w-auto">Get Series Bundle</a>
               </div>
             </div>
           </div>
@@ -113,8 +123,8 @@ const BookSection: React.FC = () => {
                 <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-brand-red rounded-full"></span> No waiting</li>
               </ul>
               <div className="mt-auto">
-                <p className="text-white text-lg md:text-xl font-header font-bold mb-4">Free with KU <span className="text-[10px] md:text-xs font-normal text-gray-500 align-middle">or $3.99/book</span></p>
-                <button className="w-full py-3 bg-white text-black font-bold uppercase tracking-widest hover:bg-brand-red hover:text-white transition-colors text-xs">Get Book 1 Free in KU</button>
+                <p className="text-white text-lg md:text-xl font-header font-bold mb-4">Free with KU <span className="text-[10px] md:text-xs font-normal text-gray-500 align-middle">or <AmazonPrice asin="B0CWT3T1YG" />/book</span></p>
+                <a href={BOOK1_URL} target="_blank" rel="noopener noreferrer" className="w-full py-3 bg-white text-black font-bold text-center uppercase tracking-widest hover:bg-brand-red hover:text-white transition-colors text-xs inline-block">Get Book 1 Free in KU</a>
               </div>
             </div>
 
@@ -131,7 +141,7 @@ const BookSection: React.FC = () => {
               </ul>
               <div className="mt-auto">
                 <p className="text-white text-lg md:text-xl font-header font-bold mb-4">$34.99 <span className="text-[10px] md:text-xs font-normal text-gray-500 align-middle">per book</span></p>
-                <button className="w-full py-3 border border-brand-red text-brand-red font-bold uppercase tracking-widest hover:bg-brand-red hover:text-white transition-colors text-xs">Pre-Order Deluxe</button>
+                <a href={BUNDLE_URL} target="_blank" rel="noopener noreferrer" className="w-full py-3 border border-brand-red text-brand-red font-bold text-center uppercase tracking-widest hover:bg-brand-red hover:text-white transition-colors text-xs inline-block">Pre-Order Deluxe</a>
               </div>
             </div>
           </div>

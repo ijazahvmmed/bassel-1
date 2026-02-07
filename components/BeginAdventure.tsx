@@ -1,6 +1,9 @@
 import React from 'react';
 
 const BeginAdventure: React.FC = () => {
+    const BOOK1_URL = "https://www.amazon.in/dp/B0CWT3T1YG?tag=cuelinkss26622-21&geniuslink=true";
+    const BUNDLE_URL = "https://www.amazon.in/dp/B0CW19B8B4?binding=kindle_edition&ref_=saga_dp_bnx_dsk_sdp";
+
     return (
         <section className="py-12 md:py-20 lg:py-24 bg-brand-dark overflow-hidden relative">
             <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10"></div>
@@ -20,9 +23,9 @@ const BeginAdventure: React.FC = () => {
                         </div>
                         <h3 className="text-h2-mobile md:text-2xl font-header font-bold text-white mb-2 uppercase">Listen on Audible</h3>
                         <p className="text-gray-400 font-sans text-body-mobile md:text-sm mb-8 flex-grow">12–15 hours per book, professional narration.</p>
-                        <button className="w-full py-3 border border-white/30 text-white font-bold uppercase tracking-widest hover:bg-brand-red hover:border-brand-red transition-colors text-xs">
+                        <a href={BOOK1_URL} target="_blank" rel="noopener noreferrer" className="w-full text-center py-3 border border-white/30 text-white font-bold uppercase tracking-widest hover:bg-brand-red hover:border-brand-red transition-colors text-xs">
                             Start Free Trial
-                        </button>
+                        </a>
                     </div>
 
                     {/* Card 2: Kindle Unlimited */}
@@ -32,8 +35,8 @@ const BeginAdventure: React.FC = () => {
                             <svg className="w-12 h-12 text-brand-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
                         </div>
                         <h3 className="text-h2-mobile md:text-2xl font-header font-bold text-white mb-2 uppercase">Read Free in KU</h3>
-                        <p className="text-gray-400 font-sans text-body-mobile md:text-sm mb-8 flex-grow">All 4 books included, 2,000 pages total.</p>
-                        <a href="https://www.amazon.in/dp/B0CWT3T1YG?tag=cuelinkss26622-21&geniuslink=true" target="_blank" rel="noopener noreferrer" className="w-full py-3 bg-white text-black font-bold text-center uppercase tracking-widest hover:bg-gray-200 transition-colors text-xs inline-block">
+                        <p className="text-gray-400 font-sans text-body-mobile md:text-sm mb-8 flex-grow">All current books included in Kindle Unlimited.</p>
+                        <a href={BOOK1_URL} target="_blank" rel="noopener noreferrer" className="w-full py-3 bg-white text-black font-bold text-center uppercase tracking-widest hover:bg-gray-200 transition-colors text-xs inline-block">
                             Get Book 1 Free
                         </a>
                     </div>
@@ -45,9 +48,9 @@ const BeginAdventure: React.FC = () => {
                         </div>
                         <h3 className="text-h2-mobile md:text-2xl font-header font-bold text-white mb-2 uppercase">Own the Series</h3>
                         <p className="text-gray-400 font-sans text-body-mobile md:text-sm mb-8 flex-grow">Hardcover & Paperback with deluxe maps.</p>
-                        <button className="w-full py-3 border border-white/30 text-white font-bold uppercase tracking-widest hover:bg-brand-red hover:border-brand-red transition-colors text-xs">
+                        <a href={BUNDLE_URL} target="_blank" rel="noopener noreferrer" className="w-full text-center py-3 border border-white/30 text-white font-bold uppercase tracking-widest hover:bg-brand-red hover:border-brand-red transition-colors text-xs">
                             Shop Paperbacks
-                        </button>
+                        </a>
                     </div>
 
                     {/* Card 4: Signed Edition */}
@@ -57,9 +60,9 @@ const BeginAdventure: React.FC = () => {
                         </div>
                         <h3 className="text-h2-mobile md:text-2xl font-header font-bold text-white mb-2 uppercase">Signed Edition</h3>
                         <p className="text-gray-400 font-sans text-body-mobile md:text-sm mb-8 flex-grow">Limited hardcover run signed by B. Salem. Free shipping.</p>
-                        <button className="w-full py-3 border border-white/30 text-white font-bold uppercase tracking-widest hover:bg-brand-red hover:border-brand-red transition-colors text-xs">
+                        <a href={BUNDLE_URL} target="_blank" rel="noopener noreferrer" className="w-full text-center py-3 border border-white/30 text-white font-bold uppercase tracking-widest hover:bg-brand-red hover:border-brand-red transition-colors text-xs">
                             Order Signed
-                        </button>
+                        </a>
                     </div>
 
                 </div>

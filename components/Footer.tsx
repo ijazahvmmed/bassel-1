@@ -1,6 +1,10 @@
 import React from 'react';
 
 const Footer: React.FC = () => {
+  const BOOK1_URL = "https://www.amazon.in/dp/B0CWT3T1YG?tag=cuelinkss26622-21&geniuslink=true";
+  const BOOK2_URL = "https://www.amazon.in/Elder-Lands-II-Kingdom-Building-ebook/dp/B0FY3TWD3N?ref_=saga_dp_bnx_dsk_dp";
+  const BUNDLE_URL = "https://www.amazon.in/dp/B0CW19B8B4?binding=kindle_edition&ref_=saga_dp_bnx_dsk_sdp";
+
   return (
     <footer className="bg-black border-t border-white/10 py-12 md:py-20 relative text-white">
       <div className="container mx-auto px-6 md:px-12 md:pl-32">
@@ -10,10 +14,9 @@ const Footer: React.FC = () => {
           <div className="flex flex-col gap-4 md:gap-6">
             <h3 className="text-lg md:text-xl font-header font-bold text-white uppercase tracking-widest mb-1 md:mb-2 border-b border-brand-red pb-2 inline-block w-full">Discover</h3>
             <ul className="flex flex-col gap-2 md:gap-3">
-              <li><a href="https://www.amazon.in/dp/B0CWT3T1YG?tag=cuelinkss26622-21&geniuslink=true" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-brand-red transition-colors font-sans text-body-mobile md:text-sm tracking-wide">The Elder Lands (Book 1)</a></li>
-              <li><a href="https://www.amazon.in/Elder-Lands-II-Kingdom-Building-ebook/dp/B0FY3TWD3N?ref_=saga_dp_bnx_dsk_dp" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-brand-red transition-colors font-sans text-body-mobile md:text-sm tracking-wide">Kingdom Building (Book 2)</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-brand-red transition-colors font-sans text-body-mobile md:text-sm tracking-wide">Book 3: Expansion War</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-brand-red transition-colors font-sans text-body-mobile md:text-sm tracking-wide">Book 4: Legacy Reckoning</a></li>
+              <li><a href={BOOK1_URL} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-brand-red transition-colors font-sans text-body-mobile md:text-sm tracking-wide">The Elder Lands (Book 1)</a></li>
+              <li><a href={BOOK2_URL} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-brand-red transition-colors font-sans text-body-mobile md:text-sm tracking-wide">Kingdom Building (Book 2)</a></li>
+              <li><a href={BUNDLE_URL} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-brand-red transition-colors font-sans text-body-mobile md:text-sm tracking-wide">Elder Lands Bundle</a></li>
             </ul>
           </div>
 
@@ -21,9 +24,8 @@ const Footer: React.FC = () => {
           <div className="flex flex-col gap-4 md:gap-6">
             <h3 className="text-lg md:text-xl font-header font-bold text-white uppercase tracking-widest mb-1 md:mb-2 border-b border-brand-red pb-2 inline-block w-full">Shop</h3>
             <ul className="flex flex-col gap-2 md:gap-3">
-              <li><a href="#" className="text-gray-400 hover:text-brand-red transition-colors font-sans text-body-mobile md:text-sm tracking-wide">Signed Copies</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-brand-red transition-colors font-sans text-body-mobile md:text-sm tracking-wide">Merch Store</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-brand-red transition-colors font-sans text-body-mobile md:text-sm tracking-wide">Kickstarter (Future)</a></li>
+              <li><a href={BUNDLE_URL} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-brand-red transition-colors font-sans text-body-mobile md:text-sm tracking-wide">Signed Bundle</a></li>
+              <li><a href={BUNDLE_URL} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-brand-red transition-colors font-sans text-body-mobile md:text-sm tracking-wide">Series Collection</a></li>
             </ul>
           </div>
 
@@ -36,8 +38,6 @@ const Footer: React.FC = () => {
               <li><a href="#" className="text-gray-400 hover:text-brand-red transition-colors font-sans text-body-mobile md:text-sm tracking-wide">TikTok</a></li>
               <li><a href="#" className="text-gray-400 hover:text-brand-red transition-colors font-sans text-body-mobile md:text-sm tracking-wide">Reddit</a></li>
               <li><a href="#" className="text-gray-400 hover:text-brand-red transition-colors font-sans text-body-mobile md:text-sm tracking-wide">Discord</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-brand-red transition-colors font-sans text-body-mobile md:text-sm tracking-wide">Twitter/X</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-brand-red transition-colors font-sans text-body-mobile md:text-sm tracking-wide">Royal Road</a></li>
             </ul>
           </div>
 
@@ -48,9 +48,6 @@ const Footer: React.FC = () => {
               <li><a href="#" className="text-gray-400 hover:text-brand-red transition-colors font-sans text-body-mobile md:text-sm tracking-wide">Fief Maps</a></li>
               <li><a href="#" className="text-gray-400 hover:text-brand-red transition-colors font-sans text-body-mobile md:text-sm tracking-wide">Character Art</a></li>
               <li><a href="#" className="text-gray-400 hover:text-brand-red transition-colors font-sans text-body-mobile md:text-sm tracking-wide">God Orb System FAQ</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-brand-red transition-colors font-sans text-body-mobile md:text-sm tracking-wide">World Guide</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-brand-red transition-colors font-sans text-body-mobile md:text-sm tracking-wide">Character Guide</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-brand-red transition-colors font-sans text-body-mobile md:text-sm tracking-wide">System Mechanics</a></li>
             </ul>
           </div>
 
