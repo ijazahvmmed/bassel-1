@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
   }, { scope: container });
 
   return (
-    <section id="home" ref={container} className="relative h-screen w-full overflow-hidden bg-black flex items-center justify-center">
+    <section id="home" ref={container} className="relative min-h-[600px] md:h-screen w-full overflow-hidden bg-black flex items-center justify-center py-16 md:py-0">
       {/* Background Image with Overlay */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-60 scale-105 animate-[pulse_20s_ease-in-out_infinite]"
@@ -32,21 +32,21 @@ const Hero: React.FC = () => {
 
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-5xl mx-auto flex flex-col items-center">
-        <p ref={bannerRef} className="text-brand-red font-header font-bold tracking-[0.5em] mb-6 text-sm md:text-base uppercase opacity-0">
+        <p ref={bannerRef} className="text-brand-red font-header font-bold tracking-[0.5em] mb-4 md:mb-6 text-xs md:text-base uppercase opacity-0">
           Two books available now. Don't wait—book now.
         </p>
 
-        <h1 ref={titleRef} className="text-4xl md:text-6xl lg:text-7xl font-header font-bold text-white tracking-tighter mb-6 leading-none uppercase mix-blend-overlay opacity-0 drop-shadow-2xl">
+        <h1 ref={titleRef} className="text-hero-mobile md:text-6xl lg:text-hero-desktop font-header font-bold text-white tracking-tighter mb-6 uppercase mix-blend-overlay opacity-0 drop-shadow-2xl">
           Get Lost in Your Next Kingdom-Building Epic
         </h1>
 
-        <div ref={lineRef} className="h-1 w-24 bg-brand-red mx-auto my-8 origin-center opacity-100"></div>
+        <div ref={lineRef} className="h-1 w-24 bg-brand-red mx-auto my-6 md:my-8 origin-center opacity-100"></div>
 
-        <p ref={subtitleRef} className="text-gray-300 font-sans text-lg md:text-xl tracking-widest max-w-3xl mx-auto mb-12 shadow-black drop-shadow-md opacity-0">
+        <p ref={subtitleRef} className="text-gray-300 font-sans text-body-mobile md:text-xl tracking-widest max-w-3xl mx-auto mb-8 md:mb-12 shadow-black drop-shadow-md opacity-0">
           Ambitious heir. Pragmatic father. One fief. Infinite consequences. <br className="hidden md:block" /> Four books. Zero cliffhangers. Zero exile tropes.
         </p>
 
-        <div ref={buttonsRef} className="flex flex-col md:flex-row gap-6 w-full md:w-auto">
+        <div ref={buttonsRef} className="flex flex-col md:flex-row gap-4 md:gap-6 w-full md:w-auto">
           <button className="group relative px-8 py-4 bg-brand-red border border-brand-red overflow-hidden transition-all hover:scale-105 shadow-[0_0_20px_rgba(220,38,38,0.5)] opacity-0">
             <span className="relative z-10 font-header font-bold tracking-widest text-white uppercase flex items-center gap-2 justify-center">
               Read Free in KU

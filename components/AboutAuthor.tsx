@@ -3,8 +3,8 @@ import ScrollReveal from './ScrollReveal';
 
 const AboutAuthor: React.FC = () => {
     return (
-        <section id="author" className="py-24 bg-black relative">
-            <div className="container mx-auto px-6 md:px-12 md:pl-32 flex flex-col md:flex-row items-center gap-12">
+        <section id="author" className="py-12 md:py-20 lg:py-24 bg-black relative">
+            <div className="container mx-auto px-6 md:px-12 md:pl-32 flex flex-col md:flex-row items-center gap-8 md:gap-12">
 
                 <div className="w-full md:w-1/3">
                     <ScrollReveal animation="fade-right">
@@ -17,10 +17,10 @@ const AboutAuthor: React.FC = () => {
 
                 <div className="w-full md:w-2/3">
                     <ScrollReveal animation="fade-left">
-                        <h2 className="text-5xl font-header font-bold text-white mb-6 uppercase">Meet B. Salem</h2>
+                        <h2 className="text-h1-mobile md:text-5xl lg:text-h1-desktop font-header font-bold text-white mb-6 uppercase">Meet B. Salem</h2>
                         <div className="h-1 w-24 bg-brand-red mb-8"></div>
 
-                        <div className="text-gray-300 font-sans text-lg leading-relaxed space-y-6">
+                        <div className="text-gray-300 font-sans text-body-mobile md:text-lg leading-relaxed space-y-4 md:space-y-6">
                             <p>
                                 Hi, I'm B. Salem. But you can call me Bassel.
                             </p>
@@ -44,22 +44,22 @@ const AboutAuthor: React.FC = () => {
 
                     {/* Stats */}
                     <ScrollReveal animation="fade-up" stagger={0.1}>
-                        <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 border-t border-white/10 pt-8">
+                        <div className="mt-8 md:mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 border-t border-white/10 pt-8">
                             <div className="opacity-0">
-                                <span className="block text-2xl font-bold text-white mb-1">100K</span>
-                                <span className="text-xs text-brand-red uppercase tracking-widest">Pages Read (2024–2025)</span>
+                                <span className="block text-xl md:text-2xl font-bold text-white mb-1">100K</span>
+                                <span className="text-[8px] md:text-xs text-brand-red uppercase tracking-widest leading-tight">Pages Read (2024–2025)</span>
                             </div>
                             <div className="opacity-0">
-                                <span className="block text-2xl font-bold text-white mb-1">1,500</span>
-                                <span className="text-xs text-brand-red uppercase tracking-widest">Reviews (4.7 avg)</span>
+                                <span className="block text-xl md:text-2xl font-bold text-white mb-1">1,500</span>
+                                <span className="text-[8px] md:text-xs text-brand-red uppercase tracking-widest leading-tight">Reviews (4.7 avg)</span>
                             </div>
                             <div className="opacity-0">
-                                <span className="block text-2xl font-bold text-white mb-1">5,000+</span>
-                                <span className="text-xs text-brand-red uppercase tracking-widest">Email Subscribers</span>
+                                <span className="block text-xl md:text-2xl font-bold text-white mb-1">5,000+</span>
+                                <span className="text-[8px] md:text-xs text-brand-red uppercase tracking-widest leading-tight">Email Subscribers</span>
                             </div>
                             <div className="opacity-0">
-                                <span className="block text-2xl font-bold text-white mb-1">10 Hours</span>
-                                <span className="text-xs text-brand-red uppercase tracking-widest">Committed/Week</span>
+                                <span className="block text-xl md:text-2xl font-bold text-white mb-1">10 Hours</span>
+                                <span className="text-[8px] md:text-xs text-brand-red uppercase tracking-widest leading-tight">Committed/Week</span>
                             </div>
                         </div>
                     </ScrollReveal>

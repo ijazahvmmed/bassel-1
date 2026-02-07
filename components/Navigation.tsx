@@ -106,7 +106,7 @@ const Navigation: React.FC = () => {
                       key={link.label}
                       to={link.href}
                       onClick={() => setIsOpen(false)}
-                      className="font-header text-4xl md:text-6xl font-bold tracking-widest text-white hover:text-black transition-colors uppercase"
+                      className="font-header text-3xl md:text-6xl font-bold tracking-widest text-white hover:text-black transition-colors uppercase"
                     >
                       {link.label}
                     </Link>
@@ -115,7 +115,7 @@ const Navigation: React.FC = () => {
                       key={link.label}
                       href={link.href}
                       onClick={() => setIsOpen(false)}
-                      className="font-header text-4xl md:text-6xl font-bold tracking-widest text-white hover:text-black transition-colors uppercase"
+                      className="font-header text-3xl md:text-6xl font-bold tracking-widest text-white hover:text-black transition-colors uppercase"
                     >
                       {link.label}
                     </a>

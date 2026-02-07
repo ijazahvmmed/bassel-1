@@ -7,17 +7,17 @@ const FAQItem: React.FC<{ question: string; answer: string }> = ({ question, ans
         <div className="border-b border-white/10 last:border-0">
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="w-full text-left py-6 flex justify-between items-center group focus:outline-none"
+                className="w-full text-left py-4 md:py-6 flex justify-between items-center group focus:outline-none"
             >
-                <span className="text-xl md:text-2xl font-header font-bold text-white uppercase group-hover:text-brand-red transition-colors pr-8">
+                <span className="text-h2-mobile md:text-2xl font-header font-bold text-white uppercase group-hover:text-brand-red transition-colors pr-8 leading-tight">
                     {question}
                 </span>
                 <span className={`text-brand-red transform transition-transform duration-300 ${isOpen ? 'rotate-45' : 'rotate-0'}`}>
-                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" /></svg>
+                    <svg className="w-6 h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" /></svg>
                 </span>
             </button>
-            <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? 'max-h-96 opacity-100 pb-8' : 'max-h-0 opacity-0'}`}>
-                <p className="text-gray-400 font-sans text-lg leading-relaxed max-w-3xl">
+            <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? 'max-h-96 opacity-100 pb-6 md:pb-8' : 'max-h-0 opacity-0'}`}>
+                <p className="text-gray-400 font-sans text-body-mobile md:text-lg leading-relaxed max-w-3xl">
                     {answer}
                 </p>
             </div>
@@ -54,10 +54,10 @@ const FAQ: React.FC = () => {
     ];
 
     return (
-        <section className="py-24 bg-black relative">
+        <section className="py-12 md:py-20 lg:py-24 bg-black relative">
             <div className="container mx-auto px-6 md:px-12 md:pl-32">
-                <div className="mb-16">
-                    <h2 className="text-4xl md:text-5xl font-header font-bold text-white uppercase mb-4">Frequently Asked Questions</h2>
+                <div className="mb-10 md:mb-16">
+                    <h2 className="text-h1-mobile md:text-5xl lg:text-h1-desktop font-header font-bold text-white uppercase mb-4">Frequently Asked Questions</h2>
                     <div className="h-1 w-24 bg-brand-red mb-6"></div>
                 </div>
 
